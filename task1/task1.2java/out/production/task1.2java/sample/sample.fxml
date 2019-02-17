@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="295.0" prefWidth="526.0">
+         <children>
+            <Slider fx:id="slider" layoutX="17.0" layoutY="62.0" max="90.0" min="10.0" prefHeight="14.0" prefWidth="493.0" />
+            <Button layoutX="28.0" layoutY="148.0" mnemonicParsing="false" onAction="#startFirst" text="start1" />
+            <Button fx:id="decBtn" layoutX="28.0" layoutY="205.0" mnemonicParsing="false" onAction="#stopFirst" text="stop1" />
+            <Button layoutX="410.0" layoutY="148.0" mnemonicParsing="false" onAction="#startSecond" text="start2" />
+            <Button fx:id="incBtn" layoutX="410.0" layoutY="218.0" mnemonicParsing="false" onAction="#stopSecond" text="stop2" />
+            <Label fx:id="label" layoutX="249.0" layoutY="131.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
